@@ -2,9 +2,9 @@ package ArraysAndHashing;
 
 import java.util.Arrays;
 
-public class ContainsDuplicate {
+public class ContainsDuplicate1 {
 	
-	    public boolean containsDuplicate(int[] nums) {
+	    public static boolean containsDuplicate(int[] nums) {
 	        Arrays.sort(nums);
 	        if(nums.length < 2){
 	            return false;
@@ -17,5 +17,12 @@ public class ContainsDuplicate {
 	        }
 	        return false;
 	    }
+	    
+	    public static void main(String[] args) {
+			
+			System.out.println("Start the Program");
+			int[] num = {1 , 2, 3, 7 , 9, 5};
+			containsDuplicate(num);
+		}
 
 }

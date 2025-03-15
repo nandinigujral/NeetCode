@@ -3,9 +3,9 @@ package ArraysAndHashing;
 import java.util.HashSet;
 import java.util.Set;
 
-public class ConatinsDpulicate1 {
+public class ConatinsDuplicate2 {
 
-	public boolean containsDuplicate(int[] nums) {
+	public static boolean containsDuplicate(int[] nums) {
 
 		Set<Integer> numSet = new HashSet<>();
 
@@ -18,5 +18,12 @@ public class ConatinsDpulicate1 {
 
 		return false;
 
+	}
+
+	public static void main(String[] args) {
+
+		System.out.println("Start the Program");
+		int[] num = { 1, 2, 3, 7, 9, 5 };
+		containsDuplicate(num);
 	}
 }
